@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record id="idle_time_inherit_idle_time" model="ir.ui.view">
+            <field name="name">survey.survey.form.inherit</field>
+            <field name="model">survey.survey</field>
+            <field name="inherit_id" ref="survey.survey_survey_view_form"/>
+            <field name="arch" type="xml">
+                    <field name="scoring_type" position="after">
+                    <field name="timer" class="oe_inline"/>
+                    </field>
+
+            </field>
+        </record>
+    </data>
+</odoo>
